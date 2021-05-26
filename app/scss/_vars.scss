@@ -1,0 +1,14 @@
+// Colors
+
+$main-color: #02A68F;
+$title: #022334;
+$text: #646E84;
+
+// Fonts
+
+%title-font {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $title;
+}

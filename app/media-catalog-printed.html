@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог СМИ Печатный</title>
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/chosen.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="burger-menu">
+            <img src="images/burger-menu.svg" alt="">
+          </div>
+          <div class="header__logo">
+            <a class="logo" href="index.html">
+              <img src="images/logo.svg" alt="Logo">
+            </a>
+          </div>
+          <form class="search-form">
+            <input class="search-form__input" name="search-form__input" type="text">
+            <button class="search-form__btn" type="button"></button>
+          </form>
+          <div class="header__buttons">
+            <a class="header__btn registration__btn" href="#">Регистрация</a>
+            <a class="header__btn login__btn" href="#">Вход</a>
+          </div>
+          <div class="shopping__cart">
+            <a class="shopping__cart-link" href="#"></a>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="media-catalog.html">
+                Каталог СМИ
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="media-catalog-bloggers.html">
+                Каталог блоггеров
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="media-catalog-publics.html">
+                Каталог пабликов
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="media-catalog-stars.html">
+                Каталог звезд
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="services.html">
+                Услуги
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="blog.html">
+                Блог
+              </a>
+            </li>
+          </ul>
+          <div class="header__buttons">
+            <a class="header__btn login__btn" href="#">
+              Вход
+            </a>
+            <a class="header__btn registration__btn" href="#">
+              Регистрация
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__list-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <span class="breadcrumbs__list-span">Каталог СМИ</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="mediacatalog catalog-printed">
+
+        <div class="container">
+
+          <section class="packages__caption catalog-caption">
+            <h3 class="title">
+              Каталог СМИ
+            </h3>
+            <label class="main__sort">
+              <span class="main__sort-title">
+                Сортировать по:
+              </span>
+              <select class="main__select chosen">
+                <option class="main__option" selected disabled>Умолчанию</option>
+                <option class="main__option">От дорогих к дешевым</option>
+                <option class="main__option">От дешевых к дорогим</option>
+                <option class="main__option">Название (A-Я)</option>
+              </select>
+            </label>
+          </section>
+
+          <section class="mediacatalog__content">
+            <div class="mediacatalog__filter">
+              <button class="mediacatalog__filter-btn filter" type="button">Фильтры</button>
+              <button class="mediacatalog__filter-btn sort" type="button">Сортировать</button>
+            </div>
+            <div class="mediacatalog__sort-content">
+              <button class="mediacatalog__sort-close">
+                <img src="images/aside-close.svg" alt="">
+              </button>
+              <h5 class="mediacatalog__sort-title">
+                Сортировать по:
+              </h5>
+              <ul class="mediacatalog__sort-list">
+                <li class="mediacatalog__sort-item">
+                  <button class="mediacatalog__sort-btn">
+                    Умолчанию
+                  </button>
+                </li>
+                <li class="mediacatalog__sort-item">
+                  <button class="mediacatalog__sort-btn">
+                    От дорогих к дешевым
+                  </button>
+                </li>
+                <li class="mediacatalog__sort-item">
+                  <button class="mediacatalog__sort-btn">
+                    От дешевых к дорогим
+                  </button>
+                </li>
+                <li class="mediacatalog__sort-item">
+                  <button class="mediacatalog__sort-btn">
+                    Название (A-Я)
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <aside class="mediacatalog__aside">
+              <button class="mediacatalog__aside-close">
+                <img class="mediacatalog-aside__close-img" src="images/aside-close.svg" alt="">
+              </button>
+              <button class="mediacatalog__aside-reset" type="reset">
+                Сбросить все фильтры
+              </button>
+              <ul class="mediacatalog__aside-items menu">
+                <li class="mediacatalog__aside-title">Вид СМИ</li>
+                <li class="mediacatalog__aside-item">
+                  <a class="mediacatalog__aside-link" href="media-catalog.html">
+                    Онлайн СМИ
+                  </a>
+                </li>
+                <li class="mediacatalog__aside-item">
+                  <a class="mediacatalog__aside-link active" href="#">
+                    Печатные СМИ
+                  </a>
+                </li>
+                <li class="mediacatalog__aside-item">
+                  <a class="mediacatalog__aside-link" href="media-catalog-tv.html">
+                    ТВ
+                  </a>
+                </li>
+                <li class="mediacatalog__aside-item">
+                  <a class="mediacatalog__aside-link" href="media-catalog-radio.html">
+                    Радио
+                  </a>
+                </li>
+              </ul>
+              <div class="mediacatalog__aside-info aside-overflow">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Тематика
+                </h4>
+                <div class="mediacatalog__list">
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      информационные
+                      <span class="mediacatalog__list-number">(139)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      бизнес
+                      <span class="mediacatalog__list-number">(34)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      образование
+                      <span class="mediacatalog__list-number">(17)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      медицина
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      путешествия
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      дизайн
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      еда
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      еда
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      еда
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      еда
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="mediacatalog__aside-info aside-overflow">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Регион
+                </h4>
+                <div class="mediacatalog__list">
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Вся Украина
+                      <span class="mediacatalog__list-number">(139)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Киев
+                      <span class="mediacatalog__list-number">(34)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Винница
+                      <span class="mediacatalog__list-number">(17)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Чернигов
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Суммы
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Полтава
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Ровно
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Ровно
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Ровно
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      Ровно
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="mediacatalog__aside-info aside-price">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Цена
+                </h4>
+                <div class="mediacatalog__range-price range-slider"></div>
+                <div class="mediacatalog__range-numbers">
+                  <div class="mediacatalog__range-number mediacatalog__price-cobnumber">1500</div>
+                  <div class="mediacatalog__range-number mediacatalog__price-output">50000</div>
+                </div>
+              </div>
+              <div class="mediacatalog__aside-info aside-language">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Формат размещения
+                </h4>
+                <div class="mediacatalog__list">
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      макет
+                      <span class="mediacatalog__list-number">(17)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      статья
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      интервью
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      новость
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="mediacatalog__aside-info aside-format">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Фильтр размещения
+                </h4>
+                <div class="mediacatalog__list">
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      1 полоса
+                    <div class="tooltip">
+                      <img class="tooltip__icon-img" src="images/info-icon.svg" alt="">
+                      <div class="tooltip__content">
+                        <img class="tooltip__close" src="images/tooltip-close.svg" alt="">
+                        <img class="tooltip__image" src="images/tooltip-img.svg" alt="">
+                      </div>
+                    </div>
+                    <span class="mediacatalog__list-number">(17)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      ½ полосы
+                    <div class="tooltip">
+                      <img class="tooltip__icon-img" src="images/info-icon.svg" alt="">
+                      <div class="tooltip__content">
+                        <img class="tooltip__close" src="images/tooltip-close.svg" alt="">
+                        <img class="tooltip__image" src="images/tooltip-img.svg" alt="">
+                      </div>
+                    </div>
+                    <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      разворот
+                    <div class="tooltip">
+                      <img class="tooltip__icon-img" src="images/info-icon.svg" alt="">
+                      <div class="tooltip__content">
+                        <img class="tooltip__close" src="images/tooltip-close.svg" alt="">
+                        <img class="tooltip__image" src="images/tooltip-img.svg" alt="">
+                      </div>
+                    </div>
+                    <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="mediacatalog__aside-info aside-type">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Тип публикации
+                </h4>
+                <div class="mediacatalog__list">
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      блог
+                      <span class="mediacatalog__list-number">(34)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      информагентство
+                      <span class="mediacatalog__list-number">(17)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      новостной сайт
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      портал
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      региональный сайт
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="mediacatalog__aside-info aside-conditions">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Дополнительные условия
+                </h4>
+                <div class="mediacatalog__list">
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      без пометки о рекламе
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="mediacatalog__aside-info aside-spam">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Заспамленность рекламой
+                </h4>
+                <div class="range__dots">
+                  <span class="range__dots-item"></span>
+                  <span class="range__dots-item"></span>
+                  <span class="range__dots-item"></span>
+                  <span class="range__dots-item"></span>
+                </div>
+                <ul class="range__dots-numbers">
+                  <li class="range__dots-number">0</li>
+                  <li class="range__dots-number">1</li>
+                  <li class="range__dots-number">2</li>
+                  <li class="range__dots-number">3</li>
+                  <li class="range__dots-number">4</li>
+                  <li class="range__dots-number">5</li>
+                </ul>
+              </div>
+              <div class="mediacatalog__aside-info aside-edition">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Тираж
+                </h4>
+                <div class="mediacatalog__list">
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      до 10 000
+                      <span class="mediacatalog__list-number">(34)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      до 25 000
+                      <span class="mediacatalog__list-number">(17)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      до 50 000
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      50 000 и больше
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="mediacatalog__aside-info aside-rating">
+                <h4 class="mediacatalog__aside-infotitle">
+                  Рейтинг
+                </h4>
+                <div class="mediacatalog__list">
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox" name="rating">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <span class="mediacatalog__list-number">(34)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox" name="rating">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <span class="mediacatalog__list-number">(17)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox" name="rating">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <span class="mediacatalog__list-number">(6)</span>
+                    </p>
+                  </label>
+                  <label class="mediacatalog__list-label">
+                    <input class="mediacatalog__list-input" type="checkbox" name="rating">
+                    <span class="mediacatalog__input-check"></span>
+                    <p class="mediacatalog__list-text">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <img class="mediacatalog__aside-img" src="images/raiting-star.svg" alt="">
+                      <span class="mediacatalog__list-number">(10)</span>
+                    </p>
+                  </label>
+                </div>
+              </div>
+            </aside>
+            <section class="mediacatalog__main">
+              <div class="mediacatalog__boxes">
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Сюжет</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-1.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-1.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-2.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-2.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-3.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-3.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Сюжет</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-1.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-1.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-2.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-2.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-3.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-3.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Сюжет</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-1.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-1.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-2.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-2.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-3.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-3.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Сюжет</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-1.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-1.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-2.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-2.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-3.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-3.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Сюжет</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-1.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-1.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-2.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-2.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-3.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-3.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Сюжет</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-1.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-1.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-2.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-2.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+                <div class="mediacatalog__box">
+                  <span class="mediacatalog__box-span">Статья</span>
+                  <picture class="mediacatalog__box-picture">
+                    <source srcset="images/shares/jpg/shares-img-3.jpg">
+                    <img class="mediacatalog__box-img" src="images/shares/webp/shares-img-3.webp" alt="">
+                  </picture>
+                  <div class="mediacatalog__box-info">
+                    <span class="mediacatalog__box-number">77.3 K</span>
+                    <h5 class="mediacatalog__box-title">
+                      Puerto Plata Digital
+                    </h5>
+                    <h5 class="mediacatalog__box-text">
+                      www.puertoplatadigital.com
+                    </h5>
+                    <div class="mediacatalog__box-price">
+                      4133,02 грн
+                    </div>
+                  </div>
+                  <div class="mediacatalog__box-link shares__box-link">
+                    <a class="mediacatalog__box-ref shares__box-ref" href="#">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item pagination__prev">
+                    <a class="pagination__link" href="#">Назад</a>
+                  </li>
+                  <li class="pagination__item active">
+                    <a class="pagination__link" href="#">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">4</a>
+                  </li>
+                  <li class="pagination__dots">...</li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">10</a>
+                  </li>
+                  <li class="pagination__item pagination__next active">
+                    <a class="pagination__link" href="#">Вперед</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__box">
+            <a class="logo" href="#">
+              <img src="images/logo.svg" alt="Logo">
+            </a>
+            <div class="footer__copyright">
+              <p>@PRmarket.
+                <script>document.write(new Date().getFullYear())</script>
+              </p>
+              <p>Все права защищены</p>
+            </div>
+            <div class="footer__social">
+              <a class="footer__social-item" href="#">
+                <img src="images/facebook.svg" alt="Facebook">
+              </a>
+              <a class="footer__social-item" href="#">
+                <img src="images/instagram.svg" alt="Instagram">
+              </a>
+              <a class="footer__social-item" href="#">
+                <img src="images/youtube.svg" alt="YouTube">
+              </a>
+            </div>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__list-caption">Сообщество</li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">FAQ</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Блог</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Telegram & Facebook</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Сотрудничество</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Партнерская программа</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Наши партнеры</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-caption">Услуги</li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="packages.html">Рекламные пакеты со скидкой</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Медиапланирование</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Диджитал продвижение</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">SERM, антикризисный PR, устранение негатива</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Журналистское расследование </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Услуги PR</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Медиацентр</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Исследования</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Продакшн</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-caption">О компании</li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Контакты</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Владельцам СМИ и блогерам</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Политика возвратов</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Условия пользования</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script src="js/libs/libs.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/libs/chosen.jquery.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
