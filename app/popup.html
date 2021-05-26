@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRMarket</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/chosen.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="burger-menu">
+                    <img  src="images/burger-menu.svg" alt="">
+                </div>
+                <div class="header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <form class="search-form">
+                    <input class="search-form__input" name="search-form__input" type="text">
+                    <button class="search-form__btn" type="button"></button>
+                </form>
+                <div class="header__buttons">
+                    <a class="header__btn registration__btn" href="#">Регистрация</a>
+                    <a class="header__btn login__btn" href="#">Вход</a>
+                </div>
+                <div class="shopping__cart">
+                    <a class="shopping__cart-link" href="#"></a>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="media-catalog.html">
+                            Каталог СМИ
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="media-catalog-bloggers.html">
+                            Каталог блоггеров
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="media-catalog-publics.html">
+                            Каталог пабликов
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="media-catalog-stars.html">
+                            Каталог звезд
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="services.html">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="blog.html">
+                            Блог
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__buttons">
+                    <a class="header__btn login__btn" href="#">Вход</a>
+                    <a class="header__btn registration__btn" href="#">Регистрация</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="create">
+            <div class="container">
+                <div class="create__inner">
+                    <div class="create__info">
+                        <h1 class="create__info-title">
+                            Создай рекламу своему бренду сам!
+                        </h1>
+                        <h3 class="create__info-subtitle">
+                            Подбери PR-инструмент на любой бюджет
+                            и получи рекламную компанию в течении
+                            3х дней!
+                        </h3>
+                        <p class="create__info-text">
+                            Более 1000 рекламных площадок, для всех сфер бизнеса, с бюджетом от 100$!
+                        </p>
+                        <a class="create__info-link" href="#">Подобрать PR-инструмент</a>
+                    </div>
+                    <div class="create__partners">
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-1.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-1.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-2.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-2.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-3.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-3.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-4.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-4.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-5.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-5.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-6.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-6.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-7.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-7.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-8.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-8.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-9.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-9.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-10.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-10.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-11.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-11.webp" alt="">
+                            </picture>
+                        </a>
+                        <a class="create__partners-item" href="#">
+                            <picture class="create__partners-picture">
+                                <source srcset="images/partners/png/partners-img-12.png" type="image/png">
+                                <img src="images/partners/webp/partners-img-12.webp" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blurb">
+            <div class="container">
+                <div class="blurb__inner">
+                    <div class="blurb__info">
+                        <h3 class="title">
+                            Реклама и PR — это просто!
+                        </h3>
+                        <h5 class="blurb__info-subtitle">
+                            PR-маркет — возможность заказать пиар для компании или продукта в пару кликов.
+                        </h5>
+                        <p class="blurb__info-text">
+                            Это простой конструктор удобных пиар- и рекламных решений.
+                            Мир уходит в онлайн и упрощаются процессы. Уже не нужно обращаться
+                            к рекламным и пиар агенствам, неделями ждать решений и планов по раскрутке продукта. Достаточно
+                            зарегистрироваться через PR-конструктор, распланировать свой бюджет и получить охваты с конверсиями.
+                        </p>
+                        <p class="blurb__info-text">
+                            А если вдруг у вас будут вопросы и понадобится совет топовых профессионалов
+                            рекламного или PR-рынка —
+                            наберите нашего менеджера на сайте и любой вопрос будет решен!
+                        </p>
+
+                        <h3 class="title">
+                            Для кого нужен PR-макет?
+                        </h3>
+                        <div class="blurb__layout">
+                            <div class="blurb__layout-captions">
+                  <span class="blurb__layout-caption">
+                    Маркетологам и PR-специалистам
+                  </span>
+                                <span class="blurb__layout-caption">
+                    Владельцам бизнеса
+                  </span>
+                                <span class="blurb__layout-caption">
+                    Владельцам СМИ, пабликов соцсетей и лидерам мнений
+                  </span>
+                            </div>
+                            <div class="blurb__layout-content">
+                                <p class="blurb__layout-text">
+                                    «Теперь для небольших целей и внутренних идей компании не нужно долго думать и тратить месяцы на
+                                    связь
+                                    с
+                                    Лидерами Мнений. Под свою идею вы можете при помощи PR-конструктора найти все каналы коммуникации с
+                                    аудиторией»
+                                </p>
+                                <p class="blurb__layout-text">
+                                    «Теперь для небольших целей и внутренних идей компании не нужно долго думать и тратить месяцы на
+                                    связь
+                                    с
+                                    Лидерами Мнений. Под свою идею вы можете при помощи PR-конструктора найти все каналы коммуникации с
+                                    аудиторией»
+                                    Лидерами Мнений. Под свою идею вы можете при помощи PR-конструктора найти все каналы коммуникации с
+                                    аудиторией»
+                                </p>
+                                <p class="blurb__layout-text">
+                                    «Теперь для небольших целей и внутренних идей компании не нужно долго думать и тратить месяцы на
+                                    связь
+                                    «Теперь для небольших целей и внутренних идей компании не нужно долго думать и тратить месяцы на
+                                    связь
+                                    с
+                                    Лидерами Мнений. Под свою идею вы можете при помощи PR-конструктора найти все каналы коммуникации с
+                                    аудиторией»
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blurb__images">
+                        <picture class="blurb__images-picture">
+                            <source srcset="images/blurb/jpg/blurb-image-1.jpg" type="image/jpeg">
+                            <img src="images/blurb/webp/blurb-image-1.webp" alt="">
+                        </picture>
+                        <picture class="blurb__images-picture">
+                            <source srcset="images/blurb/jpg/blurb-image-2.jpg" type="image/jpeg">
+                            <img src="images/blurb/webp/blurb-image-2.webp" alt="">
+                        </picture>
+                        <img class="blurb__images-bg" src="images/blurb/blurb-bg.svg" alt="">
+                        <img class="blurb__icon tiktok" src="images/blurb/tiktok.svg" alt="">
+                        <img class="blurb__icon youtube" src="images/blurb/youtube.svg" alt="">
+                        <img class="blurb__icon instagram" src="images/blurb/instagram.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="media">
+            <div class="container">
+                <div class="media__content">
+                    <h3 class="title">
+                        Размещение в СМИ
+                    </h3>
+                    <p class="text">
+                        Анализ бренда проводится для того, чтобы прежде всего понять отношение к нему различных целевых аудиторий.
+                    </p>
+                    <div class="media__boxes">
+                        <a class="media__box" href="#">
+                <span class="media__box-text">
+                  Размещение статей в онлайн СМИ
+                </span>
+                        </a>
+                        <a class="media__box" href="#">
+                <span class="media__box-text">
+                  Размещение статей в печатных СМИ
+                </span>
+                        </a>
+                        <a class="media__box" href="#">
+                <span class="media__box-text">
+                  Размещение на ТВ
+                </span>
+                        </a>
+                        <a class="media__box" href="#">
+                <span class="media__box-text">
+                  Размещение на радио
+                </span>
+                        </a>
+                    </div>
+                    <div class="media__link">
+                        <a class="media__link-ref" href="#">Смотреть каталог СМИ</a>
+                    </div>
+                </div>
+                <div class="media__content">
+                    <h3 class="title">
+                        Размещение у блогеров
+                    </h3>
+                    <p class="text">
+                        В результате аудита компания получает экспертную оценку своей маркетинговой деятельности и ее
+                        эффективности,
+                    </p>
+                    <div class="media__boxes">
+                        <a class="media__box" href="#">
+                <span class="media__box-text">
+                  Блогеры Instagram
+                </span>
+                        </a>
+                        <a class="media__box" href="#">
+                <span class="media__box-text">
+                  Блогеры Facebook
+                </span>
+                        </a>
+                        <a class="media__box" href="#">
+                <span class="media__box-text">
+                  Блогеры YouTube
+                </span>
+                        </a>
+                        <a class="media__box" href="#">
+                <span class="media__box-text">
+                  Блогеры TikTok
+                </span>
+                        </a>
+                    </div>
+                    <div class="media__link">
+                        <a class="media__link-ref" href="#">Смотреть каталог СМИ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h3 class="title">
+                    Основные услуги
+                </h3>
+                <p class="text">
+                    В результате аудита компания получает не только экспертную оценку своей маркетинговой деятельности и ее
+                    эффективности.
+                </p>
+                <div class="services__boxes">
+                    <a class="services__box" href="#">
+                        <div class="services__box-info">
+                            <img class="services__box-img" src="images/services/services-img-1.svg" alt="">
+                            <h5 class="services__box-title">
+                                Digital продвижение
+                            </h5>
+                        </div>
+                    </a>
+                    <a class="services__box" href="#">
+                        <div class="services__box-info">
+                            <img class="services__box-img" src="images/services/services-img-2.svg" alt="">
+                            <h5 class="services__box-title">
+                                Медиапланирование
+                            </h5>
+                        </div>
+                    </a>
+                    <a class="services__box" href="#">
+                        <div class="services__box-info">
+                            <img class="services__box-img" src="images/services/services-img-3.svg" alt="">
+                            <h5 class="services__box-title">
+                                Удаление негатива
+                                в СМИ
+                            </h5>
+                        </div>
+                    </a>
+                    <a class="services__box" href="#">
+                        <div class="services__box-info">
+                            <img class="services__box-img" src="images/services/services-img-4.svg" alt="">
+                            <h5 class="services__box-title">
+                                Продакшн
+                            </h5>
+                        </div>
+                    </a>
+                    <a class="services__box" href="#">
+                        <div class="services__box-info">
+                            <img class="services__box-img" src="images/services/services-img-5.svg" alt="">
+                            <h5 class="services__box-title">
+                                Социологические исследования
+                            </h5>
+                        </div>
+                    </a>
+                    <a class="services__box" href="#">
+                        <div class="services__box-info">
+                            <img class="services__box-img" src="images/services/services-img-6.svg" alt="">
+                            <h5 class="services__box-title">
+                                Журналистское расследование
+                            </h5>
+                        </div>
+                    </a>
+                    <a class="services__box" href="#">
+                        <div class="services__box-info">
+                            <img class="services__box-img" src="images/services/services-img-7.svg" alt="">
+                            <h5 class="services__box-title">
+                                Услуги PR
+                            </h5>
+                        </div>
+                    </a>
+                    <a class="services__box" href="#">
+                        <div class="services__box-info">
+                            <img class="services__box-img" src="images/services/services-img-8.svg" alt="">
+                            <h5 class="services__box-title">
+                                Медиацентр
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="shares">
+            <div class="container">
+                <h3 class="title">
+                    Акции и скидки
+                </h3>
+                <p class="text">
+                    В результате аудита компания получает не только экспертную оценку своей маркетинговой деятельности и ее
+                    эффективности, но и реальные рекомендации по устранению выявленных «слабых» звеньев, оптимизации бюджета.
+                </p>
+                <div class="shares__boxes swiper-container">
+                    <div class="shares__slider-wrapper swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="shares__box">
+                                <span class="shares__box-span">Реклама</span>
+                                <a class="shares__box-imglink" href="#">
+                                    <picture class="shares__box-picture">
+                                        <source srcset="images/shares/jpg/shares-img-1.jpg" type="image/jpeg">
+                                        <img class="shares__box-img" src="images/shares/webp/shares-img-1.webp" alt="">
+                                    </picture>
+                                </a>
+                                <div class="shares__box-info">
+                                    <span class="shares__box-percent">%</span>
+                                    <a class="shares__box-title" href="#">
+                                        Пакет Таргетированной баннерной рекламы Google Ads №1 (3000 переходов на статью)
+                                    </a>
+                                    <div class="shares__box-price">
+                                        4133 грн <del>5000 грн</del>
+                                    </div>
+                                </div>
+                                <div class="shares__box-link">
+                                    <a class="shares__box-ref" href="#">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shares__box">
+                                <span class="shares__box-span">Реклама</span>
+                                <a class="shares__box-imglink" href="#">
+                                    <picture class="shares__box-picture">
+                                        <source srcset="images/shares/jpg/shares-img-2.jpg" type="image/jpeg">
+                                        <img class="shares__box-img" src="images/shares/webp/shares-img-2.webp" alt="">
+                                    </picture>
+                                </a>
+                                <div class="shares__box-info">
+                                    <span class="shares__box-percent">%</span>
+                                    <a class="shares__box-title" href="#">
+                                        Пакет Таргетированной банерной рекламы Facebook №2 (3000 переходов на статью)
+                                    </a>
+                                    <div class="shares__box-price">
+                                        4133,02 грн <del>5000 грн</del>
+                                    </div>
+                                </div>
+                                <div class="shares__box-link">
+                                    <a class="shares__box-ref" href="#">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shares__box">
+                                <span class="shares__box-span">Реклама</span>
+                                <a class="shares__box-imglink" href="#">
+                                    <picture class="shares__box-picture">
+                                        <source srcset="images/shares/jpg/shares-img-3.jpg" type="image/jpeg">
+                                        <img class="shares__box-img" src="images/shares/webp/shares-img-3.webp" alt="">
+                                    </picture>
+                                </a>
+                                <div class="shares__box-info">
+                                    <span class="shares__box-percent">%</span>
+                                    <a class="shares__box-title" href="#">
+                                        Пакет просмотров Youtube (Google Ads) №1 (10 000 просмотров)
+                                    </a>
+                                    <div class="shares__box-price">
+                                        4133,02 грн <del>5000 грн</del>
+                                    </div>
+                                </div>
+                                <div class="shares__box-link">
+                                    <a class="shares__box-ref" href="#">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shares__box">
+                                <span class="shares__box-span">Реклама</span>
+                                <a class="shares__box-imglink" href="#">
+                                    <picture class="shares__box-picture">
+                                        <source srcset="images/shares/jpg/shares-img-1.jpg" type="image/jpeg">
+                                        <img class="shares__box-img" src="images/shares/webp/shares-img-1.webp" alt="">
+                                    </picture>
+                                </a>
+                                <div class="shares__box-info">
+                                    <span class="shares__box-percent">%</span>
+                                    <a class="shares__box-title" href="#">
+                                        Пакет Таргетированной банерной рекламы Instagram №1 (2500 переходов на статью)
+                                    </a>
+                                    <div class="shares__box-price">
+                                        4133,02 грн <del>5000 грн</del>
+                                    </div>
+                                </div>
+                                <div class="shares__box-link">
+                                    <a class="shares__box-ref" href="#">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h3 class="title">
+                    Отзывы наших клиентов
+                </h3>
+                <p class="text">
+                    В результате аудита компания получает не только экспертную оценку своей маркетинговой деятельности и ее
+                    эффективности.
+                </p>
+                <div class="reviews__content">
+                    <div class="reviews__info">
+                        <h4 class="reviews__info-title">
+                            Что говорят наши клиенты?
+                        </h4>
+                        <p class="reviews__info-text">
+                            В результате аудита компания получает не только экспертную оценку своей маркетинговой деятельности и ее
+                            эффективности,.
+                        </p>
+                    </div>
+                    <div class="reviews__slider swiper-container">
+                        <div class="reviews__slider-wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-item">
+                                    <div class="reviews__slider-info">
+                                        <picture class="reviews__slide-picture">
+                                            <source srcset="images/reviews/jpg/avatar.jpg" type="image/jpeg">
+                                            <img class="reviews__slider-avatar" src="images/reviews/webp/avatar.webp" alt="">
+                                        </picture>
+                                        <div class="reviews__slider-name">
+                                            Анна Головин
+                                            <span class="reviews__slider-position">
+                          SEO Assist
+                        </span>
+                                            <picture class="reviews__slider-logo">
+                                                <source srcset="images/reviews/png/reviews-logo.png">
+                                                <img class="reviews__slider-img" src="images/reviews/webp/reviews-logo.webp" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__slider-text">
+                                        Огромная благодарность агенству WEZOM за такую качественную и ответственную работу!
+                                        Очень нравится с вами работать! Очень чуткое и вежливое, супер профессиональное отношение к
+                                        клиенту.
+                                        Создание сайта принесло массу положительных эмоций. И результат превзошел все мои ожидания.
+                                        Конечно, в рабочем процессе возникали спорные моменты (это неизбежно), но все они решались очень
+                                        быстро и грамотно.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-item">
+                                    <div class="reviews__slider-info">
+                                        <picture class="reviews__slide-picture">
+                                            <source srcset="images/reviews/jpg/avatar.jpg" type="image/jpeg">
+                                            <img class="reviews__slider-avatar" src="images/reviews/webp/avatar.webp" alt="">
+                                        </picture>
+                                        <div class="reviews__slider-name">
+                                            Анна Головин
+                                            <span class="reviews__slider-position">
+                          SEO Assist
+                        </span>
+                                            <picture class="reviews__slider-logo">
+                                                <source srcset="images/reviews/png/reviews-logo.png">
+                                                <img class="reviews__slider-img" src="images/reviews/webp/reviews-logo.webp" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__slider-text">
+                                        Огромная благодарность агенству WEZOM за такую качественную и ответственную работу!
+                                        Очень нравится с вами работать! Очень чуткое и вежливое, супер профессиональное отношение к
+                                        клиенту.
+                                        Создание сайта принесло массу положительных эмоций. И результат превзошел все мои ожидания.
+                                        Конечно, в рабочем процессе возникали спорные моменты (это неизбежно), но все они решались очень
+                                        быстро и грамотно.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-item">
+                                    <div class="reviews__slider-info">
+                                        <picture class="reviews__slide-picture">
+                                            <source srcset="images/reviews/jpg/avatar.jpg" type="image/jpeg">
+                                            <img class="reviews__slider-avatar" src="images/reviews/webp/avatar.webp" alt="">
+                                        </picture>
+                                        <div class="reviews__slider-name">
+                                            Анна Головин
+                                            <span class="reviews__slider-position">
+                          SEO Assist
+                        </span>
+                                            <picture class="reviews__slider-logo">
+                                                <source srcset="images/reviews/png/reviews-logo.png">
+                                                <img class="reviews__slider-img" src="images/reviews/webp/reviews-logo.webp" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__slider-text">
+                                        Огромная благодарность агенству WEZOM за такую качественную и ответственную работу!
+                                        Очень нравится с вами работать! Очень чуткое и вежливое, супер профессиональное отношение к
+                                        клиенту.
+                                        Создание сайта принесло массу положительных эмоций. И результат превзошел все мои ожидания.
+                                        Конечно, в рабочем процессе возникали спорные моменты (это неизбежно), но все они решались очень
+                                        быстро и грамотно.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-item">
+                                    <div class="reviews__slider-info">
+                                        <picture class="reviews__slide-picture">
+                                            <source srcset="images/reviews/jpg/avatar.jpg" type="image/jpeg">
+                                            <img class="reviews__slider-avatar" src="images/reviews/webp/avatar.webp" alt="">
+                                        </picture>
+                                        <div class="reviews__slider-name">
+                                            Анна Головин
+                                            <span class="reviews__slider-position">
+                          SEO Assist
+                        </span>
+                                            <picture class="reviews__slider-logo">
+                                                <source srcset="images/reviews/png/reviews-logo.png">
+                                                <img class="reviews__slider-img" src="images/reviews/webp/reviews-logo.webp" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__slider-text">
+                                        Огромная благодарность агенству WEZOM за такую качественную и ответственную работу!
+                                        Очень нравится с вами работать! Очень чуткое и вежливое, супер профессиональное отношение к
+                                        клиенту.
+                                        Создание сайта принесло массу положительных эмоций. И результат превзошел все мои ожидания.
+                                        Конечно, в рабочем процессе возникали спорные моменты (это неизбежно), но все они решались очень
+                                        быстро и грамотно.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-item">
+                                    <div class="reviews__slider-info">
+                                        <picture class="reviews__slide-picture">
+                                            <source srcset="images/reviews/jpg/avatar.jpg" type="image/jpeg">
+                                            <img class="reviews__slider-avatar" src="images/reviews/webp/avatar.webp" alt="">
+                                        </picture>
+                                        <div class="reviews__slider-name">
+                                            Анна Головин
+                                            <span class="reviews__slider-position">
+                          SEO Assist
+                        </span>
+                                            <picture class="reviews__slider-logo">
+                                                <source srcset="images/reviews/png/reviews-logo.png">
+                                                <img class="reviews__slider-img" src="images/reviews/webp/reviews-logo.webp" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__slider-text">
+                                        Огромная благодарность агенству WEZOM за такую качественную и ответственную работу!
+                                        Очень нравится с вами работать! Очень чуткое и вежливое, супер профессиональное отношение к
+                                        клиенту.
+                                        Создание сайта принесло массу положительных эмоций. И результат превзошел все мои ожидания.
+                                        Конечно, в рабочем процессе возникали спорные моменты (это неизбежно), но все они решались очень
+                                        быстро и грамотно.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider-arrow swiper-button-prev"></div>
+                        <div class="reviews-slider-arrow swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="last-articles">
+            <div class="container">
+                <h3 class="title">
+                    Последние статьи нашего блога
+                </h3>
+                <p class="text">
+                    В результате аудита компания получает не только экспертную оценку своей маркетинговой деятельности, но и
+                    реальные рекомендации по устранению выявленных «слабых» звеньев, оптимизации бюджета.
+                </p>
+                <div class="last-articles__cards swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="last-articles__card">
+                                <a class="last-articles__imglink" href="#">
+                                    <picture class="last-articles__picture">
+                                        <source srcset="images/last-articles/jpg/img-1.jpg">
+                                        <img src="images/last-articles/webp/img-1.webp" alt="">
+                                    </picture>
+                                </a>
+                                <div class="last-articles__info">
+                                    <a class="last-articles__title" href="#">
+                                        Скидки на статьи в СМИ
+                                    </a>
+                                    <p class="last-articles__text">
+                                        Каждый владелец сайта рано или поздно задумывается над вопросом контента на нем. Какой он должен
+                                        быть?
+                                        Как оценить качество контента на сайте?
+                                    </p>
+                                    <a class="last-articles__card-link" href="#">Читать дальше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="last-articles__card">
+                                <a class="last-articles__imglink" href="#">
+                                    <picture class="last-articles__picture">
+                                        <source srcset="images/last-articles/jpg/img-2.jpg">
+                                        <img src="images/last-articles/webp/img-2.webp" alt="">
+                                    </picture>
+                                </a>
+                                <div class="last-articles__info">
+                                    <a class="last-articles__title" href="#">
+                                        Скидки на статьи в СМИ
+                                    </a>
+                                    <p class="last-articles__text">
+                                        Какой он должен быть? Как оценить качество контента на сайте? К нашему с Вами счастью, сам Google
+                                        ответил на этот вопрос.
+                                    </p>
+                                    <a class="last-articles__card-link" href="#">Читать дальше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="last-articles__card">
+                                <a class="last-articles__imglink" href="#">
+                                    <picture class="last-articles__picture">
+                                        <source srcset="images/last-articles/jpg/img-3.jpg">
+                                        <img src="images/last-articles/webp/img-3.webp" alt="">
+                                    </picture>
+                                </a>
+                                <div class="last-articles__info">
+                                    <a class="last-articles__title" href="#">
+                                        Скидки на статьи в СМИ
+                                    </a>
+                                    <p class="last-articles__text">
+                                        К нашему с Вами счастью, сам Google ответил на этот вопрос. Kак оценить качество контента на
+                                        сайте?
+                                        К
+                                        нашему с Вами счастью, сам Google ответил на вопрос. Чтобы оценить качество контента, в Google
+                                        предлагают использовать...
+                                    </p>
+                                    <a class="last-articles__card-link" href="#">Читать дальше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="last-articles__link">
+                    <a class="last-articles__ref media__link-ref" href="#">Посмотреть другие статьи</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__inner">
+                    <h3 class="title">
+                        Подпишись на рассылку
+                    </h3>
+                    <p class="text">
+                        Самые интересные кейсы и решения в маркетинке и PR. <br>
+                        Подпишись и будь в курсе всех эффективных и трендовых тенденций.
+                    </p>
+                    <form class="subscribe__form" method="POST" id="subscribe__form">
+                        <input class="subscribe__form-input" name="subscribe__form-input" type="email" placeholder="E-mail">
+                        <span class="input-error" id="input-error">Заполните обязательное поле</span>
+                        <button class="subscribe__form-submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__box">
+                    <a class="logo" href="#">
+                        <img src="images/logo.svg" alt="Logo">
+                    </a>
+                    <div class="footer__copyright">
+                        <p>@PRmarket.
+                            <script>document.write(new Date().getFullYear())</script>
+                        </p>
+                        <p>Все права защищены</p>
+                    </div>
+                    <div class="footer__social">
+                        <a class="footer__social-item" href="#">
+                            <img src="images/facebook.svg" alt="Facebook">
+                        </a>
+                        <a class="footer__social-item" href="#">
+                            <img src="images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a class="footer__social-item" href="#">
+                            <img src="images/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__list-caption">Сообщество</li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">FAQ</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Блог</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Telegram & Facebook</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Сотрудничество</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Партнерская программа</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Наши партнеры</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-caption">Услуги</li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="packages.html">Рекламные пакеты со скидкой</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Медиапланирование</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Диджитал продвижение</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">SERM, антикризисный PR, устранение негатива</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Журналистское расследование </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Услуги PR</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Медиацентр</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Исследования</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Продакшн</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-caption">О компании</li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Владельцам СМИ и блогерам</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Политика возвратов</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Условия пользования</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/libs/libs.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/libs/chosen.jquery.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>
