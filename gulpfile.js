@@ -16,18 +16,6 @@ function browsersync() {
   });
 }
 
-function styles() {
-  return src('app/scss/style.scss')
-    .pipe(scss({ outputStyle: 'compressed' }))
-    .pipe(concat('style.min.css'))
-    .pipe(autoprefixer({
-      overrideBrowsersList: ['last 10 versions'],
-      grid: true
-    }))
-    .pipe(dest('app/css'))
-    .pipe(browserSync.stream())
-}
-
 function scripts() {
   return src('app/js/script.js')
     .pipe(concat('script.min.js'))
@@ -67,7 +55,7 @@ function build() {
   return src([
     'app/*.html',
     'app/css/*.css',
-    'app/js/*.js', 
+    'app/js/*.js',
     'app/js/libs/*.js',
     'app/fonts/**/*'
   ], { base: 'app' })
@@ -81,8 +69,38 @@ function cleanDist() {
 function watching() {
   watch(['app/*.html']).on('change', browserSync.reload);
   watch(['app/scss/**/*.scss'], styles);
+  watch(['app/scss/den/styleDen.scss'], stylesDen);
   watch(['app/js/**/*.js', '!app/js/script.min.js'], scripts);
 }
+
+
+
+function styles() {
+    return src('app/scss/style.scss')
+        .pipe(scss({ outputStyle: 'compressed' }))
+        .pipe(concat('style.min.css'))
+        .pipe(autoprefixer({
+            overrideBrowsersList: ['last 10 versions'],
+            grid: true
+        }))
+        .pipe(dest('app/css'))
+        .pipe(browserSync.stream())
+}
+
+
+function stylesDen() {
+    return src('app/scss/den/styleDen.scss')
+        .pipe(scss({ outputStyle: 'compressed' }))
+        .pipe(concat('styleDen.min.css'))
+        .pipe(autoprefixer({
+            overrideBrowsersList: ['last 10 versions'],
+            grid: true
+        }))
+        .pipe(dest('app/css/den'))
+        .pipe(browserSync.stream())
+}
+
+
 
 exports.browsersync = browsersync;
 exports.styles = styles;
@@ -92,5 +110,9 @@ exports.images = images;
 exports.watching = watching;
 exports.cleanDist = cleanDist;
 
+exports.stylesDen = stylesDen;
+
+
+
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, libsJs, scripts, browsersync, watching);
+exports.default = parallel(styles, stylesDen, libsJs, scripts, browsersync, watching);

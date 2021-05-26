@@ -14,12 +14,19 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
+
+    <!-- Den style -->
+    <link rel="stylesheet" href="css/den/styleDenLibs.min.css">
+    <link rel="stylesheet" href="css/den/styleDen.min.css">
+    <!--  -------  -->
+
+
 </head>
 
 <body>
 
 <div class="wrapper">
-
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -898,6 +905,123 @@
         </div>
     </footer>
 
+
+    <div class="popup" id="popupEnter">
+
+
+        <div class="popup-nav">
+            <a class="btn active" href="#form-login">
+                <span>Логин</span>
+            </a>
+            <a class="btn" href="#form-register">
+                <span>Регистрация</span>
+            </a>
+        </div>
+
+        <div class="popup-form active" id="form-login">
+            <form>
+                <label class="form-label">
+                    <span class="form-caption">E-mail*</span>
+                    <input class="form-input" type="email" placeholder="E-mail" required>
+                    <span class="form-error">Ошибка</span>
+                </label>
+                <label class="form-label">
+                    <span class="form-caption">Пароль*</span>
+                    <input class="form-input" type="password" name="password" placeholder="Пароль" required>
+                    <span class="form-error">Ошибка</span>
+                    <span class="form-link" id="forgot-password">Забыли пароль?</span>
+                </label>
+                <div class="form-actions">
+                    <button type="submit" class="btn">
+                        <span>Авторизация</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="popup-form" id="form-register">
+            <form>
+                <div class="form-group">
+                    <label class="form-label">
+                        <span class="form-caption">Имя*</span>
+                        <input class="form-input" type="text" placeholder="Имя" name="name">
+                        <span class="form-error">Ошибка</span>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-caption">Фамилия*</span>
+                        <input class="form-input" type="text" placeholder="Фамилия" name="surname">
+                        <span class="form-error">Ошибка</span>
+                    </label>
+                </div>
+                <label class="form-label">
+                    <span class="form-caption">E-mail*</span>
+                    <input class="form-input" type="email" placeholder="E-mail" required>
+                    <span class="form-error">Ошибка</span>
+                </label>
+                <label class="form-label">
+                    <span class="form-caption">Пароль*</span>
+                    <input class="form-input" type="password" name="password" placeholder="Пароль" required>
+                    <span class="form-error">Ошибка</span>
+                </label>
+                <label class="form-confirm">
+                    <input type="checkbox" name="agree" required>
+                    <i class="form-checkbox"></i>
+                    <span class="form-text">Регистрируясь, я соглашаюсь с <a target="_blank">Пользовательским соглашением</a></span>
+                </label>
+                <div class="form-actions">
+                    <button type="submit" class="btn">
+                        <span>Регистрация</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="popup-form" id="form-password">
+            <!-- Для успешной отправки формы нужно добавить класс .success в .popup-form -->
+            <form>
+                <div class="form-before">
+                    <p class="form-text password-text">Укажите e-mail, указанный Вами при регистрации
+                        и мы сразу Вам вышлем письмо с новым паролем</p>
+                    <label class="form-label">
+                        <span class="form-caption">E-mail*</span>
+                        <input class="form-input" type="email" placeholder="E-mail" required>
+                        <span class="form-error">Ошибка</span>
+                        <span class="form-link" id="remember-password">Я вспомнил пароль</span>
+                    </label>
+                    <div class="form-actions">
+                        <button type="submit" class="btn">
+                            <span>Получить пароль</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-after">
+                    <p class="form-text success-text">Вам было отправлено электронное письмо с инструкциями по созданию нового пароля на адрес: </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="popup-social">
+            <h3 class="popup-social-title">
+                <span>Или войти с помощью</span>
+            </h3>
+            <div class="popup-social-actions">
+                <a href="" class="btn btn-social btn-facebook" target="_blank">
+                    <span class="icon">
+                        <img src="images/icons/ic-facebook.svg" alt="">
+                    </span>
+                    <span>Facebook</span>
+                </a>
+                <a href="" class="btn btn-social btn-google" target="_blank">
+                    <span class="icon">
+                        <img src="images/icons/ic-google.svg" alt="">
+                    </span>
+                    <span>Google</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
 </div>
 
 <script src="js/libs/libs.min.js"></script>
@@ -905,6 +1029,17 @@
 <script src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/libs/chosen.jquery.js"></script>
 <script src="js/script.min.js"></script>
+
+
+<!-- Den script -->
+<script src="js/den/scriptDenLibs.js"></script>
+<script src="js/den/scriptDen.js"></script>
+<script src="js/den/validations.js"></script>
+<!-- ---------- -->
+
+
+
+
 </body>
 
 </html>
