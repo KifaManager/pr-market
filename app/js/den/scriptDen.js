@@ -40,5 +40,19 @@ $(document).ready(function(){
     });
     // ----------------- //
 
+    // Show More Cart Item
+    // ----------------- //
+    $('.cart-link').on('click', function(){
+        $(this).toggleClass('open');
+        $(this).closest('.content').toggleClass('open');
+    });
+    // ----------------- //
+
+    $('#open-promo').on('click', function(){
+       $(this).closest('.total-promo').toggleClass('open')
+    });
+
+
+
 
 });
